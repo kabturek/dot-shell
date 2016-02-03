@@ -5,9 +5,9 @@ export PATH="$PATH:~/.dotfiles/bin"
 
 export EDITOR=vim
 
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
-if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
-  GIT_PROMPT_THEME=Default
-  source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+if [ -f $HOME/.bash/autojump.sh ]; then
+  . $HOME/.bash/autojump.sh
+fi
+if [ -f $HOME/.bash/prompt.sh ]; then
+  . $HOME/.bash/prompt.sh
 fi
